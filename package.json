@@ -1,0 +1,31 @@
+{
+  "name": "@cemoody/pi-crust-ext-schedule",
+  "version": "0.1.0",
+  "description": "Cron-scheduled prompts for pi-crust, with a sidebar activity view.",
+  "license": "MIT",
+  "author": "cemoody",
+  "type": "module",
+  "main": "./server.mjs",
+  "exports": {
+    ".": "./server.mjs"
+  },
+  "files": ["server.mjs", "LICENSE", "README.md", "web.mjs"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cemoody/pi-crust-ext-schedule.git"
+  },
+  "homepage": "https://github.com/cemoody/pi-crust-ext-schedule#readme",
+  "bugs": {
+    "url": "https://github.com/cemoody/pi-crust-ext-schedule/issues"
+  },
+  "keywords": ["pi-crust", "pi-crust-extension", "pi.dev"],
+  "engines": {
+    "node": ">=22"
+  },
+  "piRemoteControl": {
+    "extension": "./server.mjs", "web": "./web.mjs"
+  },
+  "piCrust": {
+    "extension": "./server.mjs", "web": "./web.mjs"
+  }
+}
