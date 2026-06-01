@@ -279,4 +279,14 @@ function matchesField(value, field, min, max, validateOnly = false) {
   });
 }
 
-export const __test = { createStore, fireJob, schedulerEnabled, tick };
+export const __test = {
+  createStore,
+  fireJob,
+  schedulerEnabled,
+  tick,
+  validateSchedule,
+  validateCronInput,
+  nextRun,
+  matchesField,
+  toCronJobView,
+};
